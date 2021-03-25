@@ -1,0 +1,33 @@
+<%- include('../partials/header')%>
+
+<h2>Enter a New Flight</h2>
+<form action="/flights" method="POST">
+  <label>Airline:
+    <input type="text" name="airline">
+  </label><br>
+  <label>Airport:
+    <input type="text" name="airport" value="DEN">
+    </label><br>
+    <label>Flight No:
+    <input type="text" name="flightNo">
+    </label><br>
+  </label><br>
+  <label>Departs:
+    <input type="datetime-local" name="departs" value="">
+    </label><br>
+  </label><br>
+  <!-- <label>On Time:
+    <input type="checkbox" name="nowShowing" checked>
+  </label><br> -->
+  <input type="submit" value="Add Flight">
+</form>
+
+
+<!-- airline: String,
+  airport: String,
+  flightNo: Number,
+  departs: Date, -->
+
+
+
+<%- include('../partials/footer')%>
